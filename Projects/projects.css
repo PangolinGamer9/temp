@@ -1,0 +1,30 @@
+p {
+    color:rgb(254, 185, 116);
+    text-align: center; 
+    font-size:x-large;
+}
+
+iframe {
+    text-align:center;
+}
+
+.description {
+    font-size: larger;
+    color: rgb(224, 255, 84);
+}
+
+ol {
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin: 10 auto;
+    font-size: 20px;
+    list-style-position: inside;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+  }

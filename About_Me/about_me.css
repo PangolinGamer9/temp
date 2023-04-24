@@ -1,0 +1,134 @@
+main {
+    text-align:center;
+}
+
+ol {
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    margin: 10 auto;
+    font-size: 20px;
+    list-style-position: inside;
+}
+  
+
+h3 {
+    padding: 0px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+  }
+
+p {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 666.66px;
+  margin: 0 auto;
+  top: 150px;
+}
+
+.slideshow {
+  display: flex;
+  width: 100%;
+}
+
+.slideshow img {
+  width: 100%;
+  height: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #e8e7e7;
+  background-color: rgb(240, 137, 137);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#Resume {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top:500px;
+}
