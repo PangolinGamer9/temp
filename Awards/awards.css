@@ -64,3 +64,30 @@ img {
     max-height: 400px;
   }
   
+
+/*--------------------*/
+  #english-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  #english-image-container, #rotary-text-container {
+    display: flex;
+  }
+
+  #english-text-container {
+    padding: 10px;
+    font-size: xx-large;
+    background-color: rgb(218, 110, 64);
+  }
+  
+  
+  #english-myImage, #rotary-myText {
+    max-width: 550px;
+    max-height: 400px;
+  }
+  
