@@ -196,10 +196,26 @@
     </p>
     <div id="Images">
       <img src="Academic-Excellence.jpg" width="550px" height="400px" style="float: left;">
-      <img src="Outstanding-English.jpg" width="550px" height="400px" style="float: right;">
+      
 
-      <!--<img src="Rotary.jpg" width="550px" height="400px" style="float: left;">-->
+      <!--<img src="Outstanding-English.jpg" width="550px" height="400px" style="float: right;">-->
 
+      <div id="english-container" style="float: right;">
+        <div id="english-image-container">
+          <img src="Outstanding-English.jpg" width="550px" height="400px" style="float: right;" alt="Outstanding English Award">
+        </div>
+        
+        <div id="english-text-container"  style="display:none;">
+          <p id="english-myText">
+            This is an award that I was given for
+            an achieving an "Outstanding Achievement"
+            in English.
+          </p>
+        </div>
+        
+      </div>
+      
+      
       <div id="container" style="float: right;">
         <div id="image-container">
           <img id="XC_varsity" src="XC-Varsity.jpg" alt="Cross Country Varsity award" width="550px" height="400px" >
@@ -285,7 +301,32 @@
           rotary_textContainer.style.display = "none";
           rotary_imageContainer.style.display = "flex";
         });
+        
+         //------------------------------------------------------------
+        var english = document.getElementById("english-image");
+        var english_myText = document.getElementById("english-myText");
+        var english_imageContainer = document.getElementById("english-image-container");
+        var english_textContainer = document.getElementById("english-text-container");
+        
+        rotary.addEventListener("click", function() {
+          // get the width and height of the image
+          var english_width = rotary.offsetWidth;
+          var english_height = rotary.offsetHeight;
 
+          // set the width and height of the text element
+          english_textContainer.style.width = english_width + "px";
+          english_textContainer.style.height = english_height + "px";
+
+          // hide the image container and show the text container
+          english_imageContainer.style.display = "none";
+          english_textContainer.style.display = "flex";
+        });
+
+        english_myText.addEventListener("click", function() {
+          // hide the text container and show the image container
+          english_textContainer.style.display = "none";
+          english_imageContainer.style.display = "flex";
+        });
         
       </script>
 
